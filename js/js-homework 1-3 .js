@@ -14,6 +14,8 @@
 // Любая строка, кроме ADMIN_PASSWORD. При таком значении userPassword переменной message следует присвоить ACCESS_DENIED.
 // Используйте if else if else для написания скрипта.
 
+
+
 const userPassword = 'jqueryismyjam';
 
 const ADMIN_PASSWORD = 'jqueryismyjam';
@@ -24,9 +26,12 @@ const ACCESS_DENIED = 'Доступ запрещен, неверный паро�
 let message;
 
 // Write code under this line
-  
+  if (userPassword === 'jqueryismyjam')   {message=ACCESS_IS_ALLOWED} 
+else if  (userPassword ==='jqueryismyjam') {message=ACCESS_DENIED} 
+else if  (userPassword === null) {message=CANCELED_BY_USER} else if   (userPassword === 'bla') {message=ACCESS_DENIED }
 
-// console.log(message);
+
+console.log(message);
 
 //если userPassword равно 'jqueryismyjam' 
 // то значение message будет равно
@@ -38,4 +43,4 @@ let message;
 
 //если userPassword равно '123' 
 // то значение message будет равно
-// 'Доступ запрещен, неверный пароль!'
+// 'Доступ запрещен, неверный пароль!
