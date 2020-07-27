@@ -1,5 +1,17 @@
+// split
+const message = 'Welcome to Bahamas!';
 
-console.log (true && 5 > 3 && "javascript")
+// Разбивает строку по разделителю, в данном случае это пробел
+console.log(message.split(' ')); // ["Welcome", "to", "Bahamas!"]
 
+// Вызов split с пустой строкой разобьёт по буквам
+console.log(message.split('')); // [много букв :)]
 
-console.log (Number('25px'))
+// join
+const clients = ['Mango', 'Poly', 'Ajax'];
+
+// Сошьет все элементы массива в строку,
+// между каждой парой элементов будет указанный разделитель
+console.log(clients.join(' ')); // "Mango Poly Ajax"
+console.log(clients.join(',')); // "Mango,Poly,Ajax"
+console.log(clients.join('-')); // "Mango-Poly-Ajax"
