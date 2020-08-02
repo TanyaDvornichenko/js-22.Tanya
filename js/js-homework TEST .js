@@ -10,6 +10,7 @@ console.log(message.split('')); // [много букв :)]
 // join
 const clients = ['Mango', 'Poly', 'Ajax'];
 
+
 // Сошьет все элементы массива в строку,
 // между каждой парой элементов будет указанный разделитель
 console.log(clients.join(' ')); // "Mango Poly Ajax"
